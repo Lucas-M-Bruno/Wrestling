@@ -121,6 +121,61 @@ input:focus, textarea:focus{
  outline-color: #B22222;
 }
 
+@media (max-width: 640px) {
+  header {
+    padding: 10px;
+  }
+  .cabeçalho {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+  header nav li {
+    display: block;
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  /* Ajustes na primeira seção */
+  section .grid {
+    grid-template-columns: 1fr;
+  }
+  section h2 {
+    padding: 20px;
+    font-size: 24px;
+  }
+  .conteudo {
+    padding: 10px;
+  }
+
+  /* Ajustes para os astros */
+  .astros img {
+    height: 150px;
+  }
+
+  /* Formulário */
+  .formulario {
+    padding: 10px;
+  }
+
+  form button, form input, button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  header {
+    padding: 15px;
+  }
+  .cabeçalho {
+    padding: 0 32px;
+    max-width: 100%;
+    width: 100vw;
+  }
+  .astros li img {
+    height: 210px;
+  }
+}
 
 
 
